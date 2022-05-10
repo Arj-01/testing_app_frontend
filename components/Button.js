@@ -12,7 +12,7 @@ export default function Button({ mode, style, ...props }) {
         mode === 'contained' && { backgroundColor: '#000000' },
         style,
       ]}
-      labelStyle={styles.text1}
+      labelStyle={styles.text}
       mode={mode}
       {...props}
     />
@@ -21,21 +21,16 @@ export default function Button({ mode, style, ...props }) {
 
 const styles = StyleSheet.create({
   button: {
+  
     width: '50%',
     marginVertical: 10,
     paddingVertical: 1,
+   
   },
-  text1: {
+  text: {
     color : '#000000',
     fontWeight: 'bold',
     fontSize: 15,
     lineHeight: 26,
   },
-  text2: {
-    color : '#FFFFFF',
-    fontWeight: 'bold',
-    fontSize: 15,
-    lineHeight: 26,
-  },
- 
 })
